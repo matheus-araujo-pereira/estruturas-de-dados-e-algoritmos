@@ -5,7 +5,41 @@ matplotlib.use("QtAgg")
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-meu_array = [64, 34, 25, 12, 22, 11, 90]
+meu_array = [
+    64,
+    34,
+    25,
+    12,
+    22,
+    11,
+    90,
+    45,
+    33,
+    27,
+    18,
+    2,
+    8,
+    19,
+    50,
+    40,
+    55,
+    60,
+    70,
+    80,
+    85,
+    95,
+    100,
+    75,
+    65,
+    30,
+    20,
+    10,
+    5,
+    15,
+    17,
+    19,
+    23,
+]
 
 
 def bubble_sort_otimizado(arr):
@@ -75,7 +109,7 @@ anim = animation.FuncAnimation(
     fig,
     func=atualizar,
     frames=bubble_sort_otimizado(meu_array.copy()),
-    interval=800,
+    interval=100,
     repeat=False,
     cache_frame_data=False,
 )

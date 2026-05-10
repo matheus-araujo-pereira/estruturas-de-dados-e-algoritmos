@@ -5,7 +5,7 @@ matplotlib.use("QtAgg")
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-meu_array = [7, 12, 9, 4, 11]
+meu_array = [7, 12, 9, 4, 11, 5, 3, 8, 6, 10, 2, 1, 15, 14, 13, 16, 20, 18, 17, 19]
 
 
 def buscar_menor(arr):
@@ -68,7 +68,7 @@ anim = animation.FuncAnimation(
     fig,
     func=atualizar,
     frames=buscar_menor(meu_array),
-    interval=1000,
+    interval=100,
     repeat=False,
     cache_frame_data=False,
 )
